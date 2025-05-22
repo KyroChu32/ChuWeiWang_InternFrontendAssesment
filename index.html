@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Assessment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        
+        <!-- TODO: Implement Task 1 here -->
+        <nav class="navbar navbar-expand-lg navbar-dark text-bg-primary rounded-bottom-4 fixed-top">
+            <div class=" container-fluid " >
+                <a href="" class=" navbar-brand">
+                    <img src="img/logo_image.png" alt="logo" width="50" height="50" class="d-inline-block align-text">
+                    Frontend Assessment
+                </a>
+
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto p-3">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <h1 class="text-center mt-2" style="padding-top: 4rem;">Welcome to the Frontend Assessment</h1>
+
+        
+        <!-- TODO: Implement Task 2 here -->
+        
+        <div class="container text-center mt-4">
+            <div class="row rounded-3 justify-content-center g-4">
+
+                <div class="col-md-4 d-flex  justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="img/card_img1.jpg" class="card-img-top" style="width: auto; height: 10rem;" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">Zoom-Zoom Speed</h5>
+                            <p class="card-text">Blazing fast like a rocket-powered hamster on roller skates.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn btn-primary w-100">Try it!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="img/card_img2.jpeg" class="card-img-top" style="width: auto; height: 10rem;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Screen Ninja </h5>
+                            <p class="card-text">Sneaks into every screen size and looks good doing it.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn btn-primary w-100">Try it!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="img/card_img3.jpg" class="card-img-top" style="width: auto; height: 10rem;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Style Your Way</h5>
+                            <p class="card-text">Swap colors, fonts, and vibes like a digital chameleon.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn btn-primary w-100">Try it!</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- TODO: Implement Task 3 here -->
+        <footer class="bg-dark  mt-5 rounded-top" style="height: auto;">
+            <div class="container-lg overflow-hidden ">
+                <div class="row gx-5 mt-3">
+
+                    <div class="col-md">
+                        <div class="p-3 text-light ms-4">
+                            <h3 class="">Frontend Assessment</h3>
+                            <p>Crafted with 💻, ☕, and a dash of creativity.</p>
+                            <ul class="list-unstyled ">
+                                <li class="mt-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
+                                <li class="mt-2"><a href="#" class="text-light text-decoration-none">About</a></li>
+                                <li class="mt-2"><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="p-3">
+                            <h4  class="text-light">Feel free to give the command.</h4>
+                            <form class="mt-4 text-center" id="submit_form" style="width: auto;">
+                                <div class="form-floating mb-3" >
+                                    <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                                    <label for="floatingInput">Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingEmail" placeholder="Email address">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" placeholder="Message" id="floatingMessage" style="height: 100px"></textarea>
+                                    <label for="floatingInput">Message</label>
+                                </div>
+
+                                <button type="submit" style="width: 10rem;" class="btn btn-primary mt-3">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-light">
+                    <hr >
+                    <p class="mb-4 text-light text-center ">&copy; 2025 Some one</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Task 4 Modal -->
+        <div class="modal fade " id="modal" tabindex="-1" aria-labelledby="modal_label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-bg-dark justify-content-center">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" >Submitted Information</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Name:</strong> <span id="pass_name"></span></p>
+                        <p><strong>Email:</strong> <span id="pass_email"></span></p>
+                        <p><strong>Message:</strong> <span id="pass_message"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("submit_form").addEventListener("submit", function (e) {
+            e.preventDefault(); 
+
+            const name = document.getElementById("floatingName").value;
+            const email = document.getElementById("floatingEmail").value;
+            const message = document.getElementById("floatingMessage").value;
+
+            if(!name || !email || !message){
+                alert("Please fill in all the question");
+                return;
+            }
+
+            document.getElementById("pass_name").textContent = name;
+            document.getElementById("pass_email").textContent = email;
+            document.getElementById("pass_message").textContent = message;
+
+            const infoModal = new bootstrap.Modal(document.getElementById("modal"));
+            infoModal.show();
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
